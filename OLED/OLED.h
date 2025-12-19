@@ -3,15 +3,15 @@
 
 #include <stdint.h> 
 
-/* »ù´¡¿ØÖÆº¯Êı */
+/* åŸºç¡€æ§åˆ¶å‡½æ•° */
 void OLED_Init(void);
 void OLED_Clear(void);
 
-/* ÏÔ´æË¢ĞÂº¯Êı*/
-void OLED_Update(void); // ½«ÏÔ´æ»º³åÇøÈ«²¿Ğ´ÈëÆÁÄ»
-void OLED_Refresh_Area(uint8_t x, uint8_t y, uint8_t width, uint8_t height); // Ë¢ĞÂÖ¸¶¨ÇøÓò
+/* æ˜¾å­˜åˆ·æ–°å‡½æ•°*/
+void OLED_Update(void); // å°†æ˜¾å­˜ç¼“å†²åŒºå…¨éƒ¨å†™å…¥å±å¹•
+void OLED_Refresh_Area(uint8_t x, uint8_t y, uint8_t width, uint8_t height); // åˆ·æ–°æŒ‡å®šåŒºåŸŸ
 
-/* »ù´¡ÏÔÊ¾º¯Êı */
+/* åŸºç¡€æ˜¾ç¤ºå‡½æ•° */
 void OLED_ShowChar(uint8_t Line, uint8_t Column, char Char);
 void OLED_ShowString(uint8_t Line, uint8_t Column, char *String);
 void OLED_ShowNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Length);
@@ -19,9 +19,9 @@ void OLED_ShowSignedNum(uint8_t Line, uint8_t Column, int32_t Number, uint8_t Le
 void OLED_ShowHexNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Length);
 void OLED_ShowBinNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Length);
 
-/* »æÍ¼Óë¸ß¼¶ÏÔÊ¾º¯Êı */
+/* ç»˜å›¾ä¸é«˜çº§æ˜¾ç¤ºå‡½æ•° */
 void OLED_ShowBMP(uint8_t x, uint8_t y, uint8_t width, uint8_t height, const uint8_t *bmp, uint8_t mode);
-void OLED_DrawPoint(uint8_t x, uint8_t y, uint8_t mode); // ´Ëº¯ÊıÖ»Ğ´ÄÚ´æ£¬²»Ö±½ÓÏÔÊ¾
+void OLED_DrawPoint(uint8_t x, uint8_t y, uint8_t mode); // æ­¤å‡½æ•°åªå†™å†…å­˜ï¼Œä¸ç›´æ¥æ˜¾ç¤º
 void OLED_ShowString_Size(uint8_t Line, uint8_t Column, char *String, uint8_t Size);
 
 #endif
